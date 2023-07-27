@@ -3,34 +3,23 @@ package weallparish.coloredlights.block.custom;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FireBlock;
-import net.minecraft.block.RedstoneBlock;
 import net.minecraft.resource.featuretoggle.FeatureSet;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockRenderView;
-import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 import weallparish.coloredlights.util.ModTags;
 
-public class RedFireBlock extends FireBlock {
+public class WhiteFireBlock extends FireBlock {
 
-    public RedFireBlock(Settings settings) {
+    public WhiteFireBlock(Settings settings) {
         super(settings);
     }
 
-    public static boolean isRedstoneBase(BlockState state) {
-        return state.isIn(ModTags.Blocks.RED_FIRE_BASE_BLOCKS);
-    }
-
-    @Override
-    public boolean emitsRedstonePower(BlockState state) {
-        return true;
-    }
-    @Override
-    public int getWeakRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
-        return 15;
+    public static boolean isCalciteBase(BlockState state) {
+        return state.isIn(ModTags.Blocks.WHITE_FIRE_BASE_BLOCKS);
     }
 
     @Override
@@ -50,7 +39,7 @@ public class RedFireBlock extends FireBlock {
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        return RedFireBlock.isRedstoneBase(world.getBlockState(pos.down()));
+        return WhiteFireBlock.isCalciteBase(world.getBlockState(pos.down()));
     }
 
     @Override

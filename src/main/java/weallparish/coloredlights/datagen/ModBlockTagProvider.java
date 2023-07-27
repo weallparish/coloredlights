@@ -22,11 +22,32 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ModTags.Blocks.GREEN_FIRE_BASE_BLOCKS)
                 .add(Blocks.COPPER_BLOCK)
+                .add(Blocks.EXPOSED_COPPER)
+                .add(Blocks.WEATHERED_COPPER)
+                .add(Blocks.OXIDIZED_COPPER)
                 .add(Blocks.CUT_COPPER)
+                .add(Blocks.EXPOSED_CUT_COPPER)
+                .add(Blocks.WEATHERED_CUT_COPPER)
+                .add(Blocks.OXIDIZED_CUT_COPPER)
+                .add(Blocks.WAXED_COPPER_BLOCK)
+                .add(Blocks.WAXED_EXPOSED_COPPER)
+                .add(Blocks.WAXED_WEATHERED_COPPER)
+                .add(Blocks.WAXED_OXIDIZED_COPPER)
+                .add(Blocks.WAXED_CUT_COPPER)
+                .add(Blocks.WAXED_EXPOSED_CUT_COPPER)
+                .add(Blocks.WAXED_WEATHERED_CUT_COPPER)
+                .add(Blocks.WAXED_OXIDIZED_CUT_COPPER)
                 .forceAddTag(BlockTags.COPPER_ORES);
 
         getOrCreateTagBuilder(ModTags.Blocks.RED_FIRE_BASE_BLOCKS)
                 .add(Blocks.REDSTONE_BLOCK)
+                .add(Blocks.TARGET)
+                .add(Blocks.PISTON)
+                .add(Blocks.STICKY_PISTON)
+                .add(Blocks.REDSTONE_LAMP)
                 .forceAddTag(BlockTags.REDSTONE_ORES);
+
+        getOrCreateTagBuilder(ModTags.Blocks.WHITE_FIRE_BASE_BLOCKS)
+                .add(Blocks.CALCITE);
     }
 }

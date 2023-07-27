@@ -20,6 +20,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         generateCustomFireModels(blockStateModelGenerator, ModBlocks.GREEN_FIRE);
+        generateCustomFireModels(blockStateModelGenerator, ModBlocks.RED_FIRE);
+        generateCustomFireModels(blockStateModelGenerator, ModBlocks.WHITE_FIRE);
 
     }
 

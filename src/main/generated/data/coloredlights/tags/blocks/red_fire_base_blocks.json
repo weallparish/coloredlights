@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:redstone_block",
+    "minecraft:target",
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:redstone_lamp",
+    "#minecraft:redstone_ores"
+  ]
+}
