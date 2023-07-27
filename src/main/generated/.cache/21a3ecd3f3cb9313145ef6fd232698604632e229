@@ -1,2 +1,3 @@
-// 1.20.1	2023-07-26T20:27:58.0734652	Colored Lights/Tags for minecraft:block
-d30bd837b79cf43e2e0f4109f85e4e5c9f57e09e data\coloredlights\tags\blocks\green_fire_base_blocks.json
+// 1.20.1	2023-07-26T23:04:30.1498115	Colored Lights/Tags for minecraft:block
+bcdc5b5d611e9f227a79a9a7ddb6b8554cc70902 data\coloredlights\tags\blocks\green_fire_base_blocks.json
+383d2b1fb9d34f90293798ed3e8ef49bd9a5d121 data\coloredlights\tags\blocks\red_fire_base_blocks.json

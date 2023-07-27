@@ -12,6 +12,8 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> GREEN_FIRE_BASE_BLOCKS =
                 createBlockTag("green_fire_base_blocks");
+        public static final TagKey<Block> RED_FIRE_BASE_BLOCKS =
+                createBlockTag("red_fire_base_blocks");
 
         private static TagKey<Block> createBlockTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(ColoredLightMod.MOD_ID, name));

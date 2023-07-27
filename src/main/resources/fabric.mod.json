@@ -18,6 +18,9 @@
 		"main": [
 			"weallparish.coloredlights.ColoredLightMod"
 		],
+		"client": [
+			"weallparish.coloredlights.ColoredLightModClient"
+		],
 		"fabric-datagen": [
 			"weallparish.coloredlights.ColoredLightDataGenerator"
 		]

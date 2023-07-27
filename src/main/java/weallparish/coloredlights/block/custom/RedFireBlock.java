@@ -1,41 +1,25 @@
 package weallparish.coloredlights.block.custom;
 
-import com.google.common.collect.ImmutableMap;
-import it.unimi.dsi.fastutil.objects.Object2IntMap;
-import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
-import net.minecraft.block.*;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.registry.tag.BiomeTags;
-import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.FireBlock;
 import net.minecraft.resource.featuretoggle.FeatureSet;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
-import net.minecraft.state.property.IntProperty;
-import net.minecraft.state.property.Properties;
-import net.minecraft.state.property.Property;
-import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.random.Random;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
-import net.minecraft.world.*;
+import net.minecraft.world.BlockRenderView;
+import net.minecraft.world.WorldAccess;
+import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 import weallparish.coloredlights.util.ModTags;
 
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+public class RedFireBlock extends FireBlock {
 
-public class GreenFireBlock extends FireBlock {
-
-    public GreenFireBlock(Settings settings) {
+    public RedFireBlock(Settings settings) {
         super(settings);
     }
 
-    public static boolean isCopperBase(BlockState state) {
-        return state.isIn(ModTags.Blocks.GREEN_FIRE_BASE_BLOCKS);
+    public static boolean isRedstoneBase(BlockState state) {
+        return state.isIn(ModTags.Blocks.RED_FIRE_BASE_BLOCKS);
     }
 
     @Override
@@ -55,7 +39,7 @@ public class GreenFireBlock extends FireBlock {
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        return GreenFireBlock.isCopperBase(world.getBlockState(pos.down()));
+        return RedFireBlock.isRedstoneBase(world.getBlockState(pos.down()));
     }
 
     @Override

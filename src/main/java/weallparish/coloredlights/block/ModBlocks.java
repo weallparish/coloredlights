@@ -12,10 +12,13 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import weallparish.coloredlights.ColoredLightMod;
 import weallparish.coloredlights.block.custom.GreenFireBlock;
+import weallparish.coloredlights.block.custom.RedFireBlock;
 
 public class ModBlocks {
     public static final Block GREEN_FIRE = registerBlockWithoutBlockItem("green_fire",
             new GreenFireBlock(FabricBlockSettings.copyOf(Blocks.SOUL_FIRE)));
+    public static final Block RED_FIRE = registerBlockWithoutBlockItem("red_fire",
+            new RedFireBlock(FabricBlockSettings.copyOf(Blocks.SOUL_FIRE)));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(ColoredLightMod.MOD_ID, name), block);

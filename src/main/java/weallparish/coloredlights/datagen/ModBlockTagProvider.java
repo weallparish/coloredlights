@@ -22,6 +22,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ModTags.Blocks.GREEN_FIRE_BASE_BLOCKS)
                 .add(Blocks.COPPER_BLOCK)
+                .add(Blocks.CUT_COPPER)
                 .forceAddTag(BlockTags.COPPER_ORES);
+
+        getOrCreateTagBuilder(ModTags.Blocks.RED_FIRE_BASE_BLOCKS)
+                .add(Blocks.REDSTONE_BLOCK)
+                .forceAddTag(BlockTags.REDSTONE_ORES);
     }
 }
