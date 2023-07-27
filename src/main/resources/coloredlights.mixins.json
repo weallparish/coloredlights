@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "weallparish.coloredlights.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin",
+		"AbstractFireBlockMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
