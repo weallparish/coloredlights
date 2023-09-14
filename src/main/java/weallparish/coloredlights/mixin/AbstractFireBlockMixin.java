@@ -10,9 +10,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import weallparish.coloredlights.ColoredLightMod;
 import weallparish.coloredlights.block.ModBlocks;
-import weallparish.coloredlights.block.custom.CustomFireBlock;
-import weallparish.coloredlights.block.custom.RedFireBlock;
-import weallparish.coloredlights.block.custom.WhiteFireBlock;
+import weallparish.coloredlights.block.custom.*;
 
 @Mixin(AbstractFireBlock.class)
 public abstract class AbstractFireBlockMixin {
@@ -24,14 +22,47 @@ public abstract class AbstractFireBlockMixin {
 
         ColoredLightMod.LOGGER.info(blockState.getBlock().getName().toString());
 
-        if (CustomFireBlock.isCopperBase(blockState)) {
-            returnInfo.setReturnValue(ModBlocks.GREEN_FIRE.getDefaultState());
+        if (LimeFireBlock.isCopperBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.COPPER_FIRE.getDefaultState());
         }
         else if (RedFireBlock.isRedstoneBase(blockState)) {
-            returnInfo.setReturnValue(ModBlocks.RED_FIRE.getDefaultState());
+            returnInfo.setReturnValue(ModBlocks.REDSTONE_FIRE.getDefaultState());
         }
         else if (WhiteFireBlock.isCalciteBase(blockState)) {
-            returnInfo.setReturnValue(ModBlocks.WHITE_FIRE.getDefaultState());
+            returnInfo.setReturnValue(ModBlocks.CALCIUM_FIRE.getDefaultState());
+        }
+        else if (BlackFireBlock.isSculkBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.SCULK_FIRE.getDefaultState());
+        }
+        else if (MagentaFireBlock.isEndstoneBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.END_FIRE.getDefaultState());
+        }
+        else if (YellowFireBlock.isGoldBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.GOLD_FIRE.getDefaultState());
+        }
+        else if (GreenFireBlock.isMossBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.MOSS_FIRE.getDefaultState());
+        }
+        else if (CyanFireBlock.isPrismarineBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.PRISMARINE_FIRE.getDefaultState());
+        }
+        else if (BlueFireBlock.isLapisBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.LAPIS_FIRE.getDefaultState());
+        }
+        else if (PurpleFireBlock.isCryingObsidianBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.CRYING_OBSIDIAN_FIRE.getDefaultState());
+        }
+        else if (PinkFireBlock.isCoralBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.CORAL_FIRE.getDefaultState());
+        }
+        else if (LightGrayFireBlock.isMyceliumBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.MYCELIUM_FIRE.getDefaultState());
+        }
+        else if (GrayFireBlock.isCoalBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.COAL_FIRE.getDefaultState());
+        }
+        else if (BrownFireBlock.isDebrisBase(blockState)) {
+            returnInfo.setReturnValue(ModBlocks.DEBRIS_FIRE.getDefaultState());
         }
     }
 

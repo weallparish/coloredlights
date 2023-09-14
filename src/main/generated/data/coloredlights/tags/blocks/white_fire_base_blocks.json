@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft:calcite"
+    "minecraft:calcite",
+    "minecraft:bone_block"
   ]
 }
