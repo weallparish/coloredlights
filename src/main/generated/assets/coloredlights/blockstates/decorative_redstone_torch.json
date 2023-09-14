@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coloredlights:block/decorative_redstone_torch"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/decorative_redstone_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/decorative_redstone_lantern_hanging"
+    }
+  }
+}

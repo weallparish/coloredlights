@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/coral_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/coral_lantern_hanging"
+    }
+  }
+}

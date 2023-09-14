@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/lapis_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/lapis_lantern_hanging"
+    }
+  }
+}

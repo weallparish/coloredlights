@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_campfire",
+  "textures": {
+    "fire": "coloredlights:block/mycelium_campfire_fire",
+    "lit_log": "coloredlights:block/mycelium_campfire_log_lit"
+  }
+}

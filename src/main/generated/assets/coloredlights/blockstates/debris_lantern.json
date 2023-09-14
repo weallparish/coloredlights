@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/debris_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/debris_lantern_hanging"
+    }
+  }
+}

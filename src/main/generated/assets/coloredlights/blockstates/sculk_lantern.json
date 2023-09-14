@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/sculk_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/sculk_lantern_hanging"
+    }
+  }
+}

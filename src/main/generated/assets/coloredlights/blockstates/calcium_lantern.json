@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/calcium_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/calcium_lantern_hanging"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/moss_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/moss_lantern_hanging"
+    }
+  }
+}

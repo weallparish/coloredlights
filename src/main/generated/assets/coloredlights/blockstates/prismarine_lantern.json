@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/prismarine_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/prismarine_lantern_hanging"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "coloredlights:block/crying_obsidian_lantern"
+    },
+    "hanging=true": {
+      "model": "coloredlights:block/crying_obsidian_lantern_hanging"
+    }
+  }
+}

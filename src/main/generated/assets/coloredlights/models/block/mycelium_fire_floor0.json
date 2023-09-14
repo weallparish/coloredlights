@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fire_floor",
+  "textures": {
+    "fire": "coloredlights:block/mycelium_fire_0"
+  }
+}

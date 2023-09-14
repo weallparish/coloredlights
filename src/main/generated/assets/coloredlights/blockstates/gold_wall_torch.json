@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "coloredlights:block/gold_wall_torch"
+    },
+    "facing=north": {
+      "model": "coloredlights:block/gold_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "coloredlights:block/gold_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "coloredlights:block/gold_wall_torch",
+      "y": 180
+    }
+  }
+}
